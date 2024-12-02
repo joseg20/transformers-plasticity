@@ -1,0 +1,6 @@
+# Logger Configuration
+log_dir: logs/                  # Directory to store logs
+metrics_file: metrics.json      # File to save metrics
+checkpoint_dir: logs/checkpoints # Directory to save model checkpoints
+plot_dir: logs/plots            # Directory to save generated plots
+log_frequency: 10               # Frequency to log metrics (in episodes)

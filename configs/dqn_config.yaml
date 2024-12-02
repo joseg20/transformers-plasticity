@@ -1,0 +1,26 @@
+# DQN Configuration
+seed: 42  # Reproducibility seed
+
+# Environment parameters
+grid_size: 5         # Initial grid size
+max_steps: 50        # Maximum steps per episode
+num_tasks: 10        # Total number of sequential tasks
+
+# Agent parameters
+epsilon_start: 1.0   # Initial epsilon for ε-greedy policy
+epsilon_min: 0.1     # Minimum epsilon
+epsilon_decay: 0.99  # Decay rate for epsilon
+gamma: 0.99          # Discount factor
+batch_size: 64       # Batch size for training
+replay_buffer_capacity: 10000  # Replay buffer size
+
+# Transformer backbone parameters
+embed_dim: 128       # Embedding dimension for Transformer
+num_heads: 4         # Number of attention heads
+num_layers: 2        # Number of Transformer layers
+max_seq_length: 25   # Maximum sequence length (grid_size^2)
+
+# Training parameters
+learning_rate: 1e-3         # Learning rate for optimizer
+episodes_per_task: 100      # Number of episodes per task
+update_target_frequency: 10 # Frequency to update target network
